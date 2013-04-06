@@ -15,7 +15,7 @@ function parallax()
 {
     var scrolled = $(window).scrollTop();
    
-    if(scrolled<230)
+    if(scrolled<320)
     {
 	    $('#logo').css('top',(221+(scrolled*.5))+'px');
 	    $('#phone').css('top',(56+(scrolled*.9))+'px');
