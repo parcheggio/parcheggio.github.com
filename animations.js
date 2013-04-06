@@ -1,4 +1,6 @@
 $(window).load(function(){
+	$('#logo').css('display','block');
+	$('#phone').css('display','block');
 	$('#logo').addClass("animated bounceInLeft");
 	$('#phone').addClass("animated bounceInRight");
 });

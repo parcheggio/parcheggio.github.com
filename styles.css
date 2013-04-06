@@ -42,7 +42,7 @@ img
 
 #logo
 {
-	display: block;
+	display: none;
 	float: none;
 	clear: none;
 	width: 149px;
@@ -58,7 +58,7 @@ img
 
 #phone
 {
-	display: block;
+	display: none;
 	float: none;
 	clear: none;
 	width: 256px;
