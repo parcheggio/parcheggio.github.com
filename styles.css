@@ -4,7 +4,7 @@ body
 	color: #212121;
 	margin: 0px;
 	padding: 0px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
 img
@@ -96,7 +96,7 @@ h2
 }
 
 
-#divCont
+#info
 {
 	display: block;
 	float: none;
@@ -120,6 +120,7 @@ h2
 
 input[type="email"]
 {
+	-webkit-appearance: none;
 	display: block;
 	float: left;
 	clear: none;
@@ -141,6 +142,7 @@ input[type="email"]
 
 input[type="submit"]
 {
+	-webkit-appearance: none;
 	display: block;
 	float: right;
 	clear: none;
