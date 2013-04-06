@@ -13,15 +13,58 @@ img
 
 #divMain
 {
-	background: #fff url(layout/bg.jpg) no-repeat;
 	display: block;
 	float: none;
 	clear: both;
-	width: 1200px;
-	min-height: 700px;
+	width: 1280px;
+	min-height: 800px;
+	background: #fff;
 	padding: 0px;
-	margin: 0px auto 40px auto;
-	box-shadow: 0px 0px 20px 0px #000;
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
+	margin: 0px auto;
+	box-shadow: 0px 0px 20px 0px #020202;
+}
+
+#divHead
+{
+	display: block;
+	float: none;
+	clear: both;
+	width: 1280px;
+	height: 600px;
+	background: #fff url(layout/bg.jpg) no-repeat;
+	overflow: hidden;
+	margin: 0px;
+	padding: 0px;
+}
+
+#logo
+{
+	display: block;
+	float: none;
+	clear: none;
+	width: 149px;
+	height: 162px;
+	background: transparent url(layout/logo.png);
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+	top: 221px;
+	left: 376px;
+	z-index: 100;
+}
+
+#phone
+{
+	display: block;
+	float: none;
+	clear: none;
+	width: 256px;
+	height: 493px;
+	background: transparent url(layout/app.png);
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+	top: -105px;
+	left: 645px;
+	z-index: 100;
 }
