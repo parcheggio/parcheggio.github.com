@@ -224,6 +224,6 @@ a.sd, a.sd:visited
 
 a.sd:hover
 {
-	background-position-x: -80px;
+	background-position: -80px 0px;
 }
 
