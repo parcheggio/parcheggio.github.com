@@ -102,8 +102,9 @@ h2
 	display: none;
 	float: none;
 	clear: both;
-	width: 1170;
+	width: 900px;
 	padding: 25px;
+	margin: 0px auto;
 	
 }
 
