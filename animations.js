@@ -1,3 +1,8 @@
+$(window).load(function(){
+	$('#logo').addClass("animated bounceInLeft");
+	$('#phone').addClass("animated bounceInRight");
+});
+
 $(window).bind('scroll',function(e){
     parallax();
 });
