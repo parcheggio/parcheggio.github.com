@@ -104,7 +104,8 @@ h2
 	display: none;
 	float: none;
 	clear: both;
-	width: 900px;
+	max-width: 900px;
+	width: 75%;
 	padding: 25px;
 	margin: 0px auto;
 	
