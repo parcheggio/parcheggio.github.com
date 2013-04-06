@@ -48,7 +48,6 @@ h2
 	width: 100%;
 	min-height: 1050px;
 	height: 100%;
-	max-height: 105%;
 	background: #fff url(layout/noise2.png);
 	padding: 0px;
 	margin: 0px auto;
@@ -112,7 +111,6 @@ h2
 	float: none;
 	clear: both;
 	max-width: 900px;
-	height: 400px;
 	width: 80%;
 	padding: 25px;
 	margin: 0px auto;
