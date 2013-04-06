@@ -1,8 +1,10 @@
 $(window).load(function(){
 	$('#logo').css('display','block');
 	$('#phone').css('display','block');
+	$('#info').css('display','block');
 	$('#logo').addClass("animated flipInY");
 	$('#phone').addClass("animated bounceInRight");
+	$('#info').addClass("animated fadeInUp");
 });
 
 $(window).bind('scroll',function(e){

@@ -40,7 +40,7 @@ h2
 	clear: both;
 	width: 1280px;
 	min-height: 2000px;
-	background: #fff;
+	background: #fff url(layout/noise2.png);
 	padding: 0px;
 	margin: 0px auto;
 	box-shadow: 0px 0px 20px 0px #020202;
@@ -98,11 +98,10 @@ h2
 
 #info
 {
-	display: block;
+	display: none;
 	float: none;
 	clear: both;
 	width: 1170;
-	background: #fff url(layout/noise2.png);
 	padding: 25px;
 	
 }
@@ -134,7 +133,7 @@ input[type="email"]
 	border: none;
 	border-radius: 4px;
 	-moz-border-radius: 4px;
-	box-shadow: 0px 0px 2px 0px #bbb;
+	box-shadow: 0px 0px 2px 0px #999;
 	font-size: 15px;
 	font-weight: 300;
 	vertical-align: middle;
