@@ -76,11 +76,11 @@ h2
 	width: 149px;
 	height: 162px;
 	background: transparent url(layout/logo.png);
-	margin: 0px;
+	margin: 0px 0px 0px -264px;
 	padding: 0px;
 	position: absolute;
 	top: 221px;
-	left: 376px;
+	left: 50%;
 	z-index: 100;
 }
 
@@ -92,11 +92,11 @@ h2
 	width: 256px;
 	height: 493px;
 	background: transparent url(layout/app.png);
-	margin: 0px;
+	margin: 0px -261px 0px 0px;
 	padding: 0px;
 	position: absolute;
 	top: 56px;
-	left: 645px;
+	right: 50%;
 	z-index: 100;
 }
 
