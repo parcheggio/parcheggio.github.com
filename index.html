@@ -3,6 +3,17 @@
 	<head>
 		<title>Parchegg.io - A new and fun way of finding parking spots.</title>
 		<meta charset="utf-8">
+		<meta id="viewport" name='viewport'>
+		<script>
+		(function(doc) {
+		var viewport = document.getElementById('viewport');
+		if (screen.width<=700){
+		            doc.getElementById("viewport").setAttribute("content", "width=device-width, initial-scale=0.55, maximum-scale=1.0, user-scalable=1");
+		        } else if (screen.width>700 && screen.width<1081) {
+		            doc.getElementById("viewport").setAttribute("content", "width=device-width, initial-scale=1.0, maximum-scale=1.4, user-scalable=1");
+		        }
+		}(document));
+		</script>
 		<meta name="keywords" content="parking, parcheggio, app, iOS, application, applicazione, trovare, car, auto, macchina, automobile, social, startup, innovative, fun">
 		<meta name="description" content="Parchegg.io - A new and fun way of finding parking spots.">
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
