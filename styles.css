@@ -1,0 +1,23 @@
+body 
+{
+	background-color: #000;
+	color: #000;
+	margin: 0px;
+	padding: 0px;
+}
+
+img
+{
+	border:none; 
+}
+
+#divMain
+{
+	background: #fff url(layout/bg.jpg) no-repeat;
+	display: block;
+	float: none;
+	clear: both;
+	width: 1200px;
+	padding: 0px;
+	margin: 0px auto;
+}
