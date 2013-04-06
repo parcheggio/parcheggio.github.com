@@ -1,7 +1,7 @@
 $(window).load(function(){
 	$('#logo').css('display','block');
 	$('#phone').css('display','block');
-	$('#logo').addClass("animated bounceInLeft");
+	$('#logo').addClass("animated flipInY");
 	$('#phone').addClass("animated bounceInRight");
 });
 
