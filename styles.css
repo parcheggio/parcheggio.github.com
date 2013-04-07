@@ -238,3 +238,11 @@ a.sd:hover
 		min-height: 1200px;;
 	}
 }
+
+@media only screen and (min-device-width: 701px) and (max-device-width: 1080px) {
+	
+	#divMain
+	{
+		min-height: 1200px;;
+	}
+}
