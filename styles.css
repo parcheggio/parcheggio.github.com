@@ -243,6 +243,11 @@ a.sd:hover
 		min-height: 1200px;;
 	}
 	
+	#divForm
+	{
+		width: 60%;
+	}
+	
 	input[type="email"]
 	{		
 		width: 30%;
