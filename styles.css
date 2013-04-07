@@ -40,7 +40,7 @@ h2
 	clear: both;
 	max-width: 1280px;
 	width: 100%;
-	min-height: 1080px;
+	min-height: 1050px;
 	background: #fff url(layout/noise2.png);
 	padding: 0px;
 	margin: 0px auto;
@@ -232,14 +232,6 @@ a.sd:hover
 }
 
 @media only screen and (max-device-width: 700px) {
-	
-	#divMain
-	{
-		min-height: 1200px;;
-	}
-}
-
-@media only screen and (min-device-width: 701px) and (max-device-width: 1080px) {
 	
 	#divMain
 	{
