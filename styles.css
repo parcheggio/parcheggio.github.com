@@ -1,8 +1,3 @@
-html
-{
-  height:100%;
-}
-
 body 
 {
 	background: #111 url(layout/noise.png);
@@ -10,7 +5,6 @@ body
 	margin: 0px auto;
 	padding: 0px;
 	font-family: 'Open Sans', sans-serif;
-	height:100%;
 }
 
 img
@@ -47,19 +41,10 @@ h2
 	max-width: 1280px;
 	width: 100%;
 	min-height: 1050px;
-	height: 100%;
 	background: #fff url(layout/noise2.png);
 	padding: 0px;
 	margin: 0px auto;
 	box-shadow: 0px 0px 20px 0px #020202;
-}
-
-@media only screen and (max-device-width: 700px) {
-	
-	#divMain
-	{
-		height: 160%;
-	}
 }
 
 
@@ -246,3 +231,18 @@ a.sd:hover
 	background-position: -80px 0px;
 }
 
+@media only screen and (max-device-width: 700px) {
+	
+	#divMain
+	{
+		min-height: 1200px;;
+	}
+}
+
+@media only screen and (min-device-width: 701px) and (max-device-width: 1080px) {
+	
+	#divMain
+	{
+		min-height: 1200px;;
+	}
+}
