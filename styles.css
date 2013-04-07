@@ -117,7 +117,7 @@ h2
 	clear: both;
 	width: 80%;
 	max-width: 470px;
-	max-height: 100px;
+	height: 100px;
 	padding: 0px;
 	margin: 35px auto 0px auto;
 }
@@ -131,8 +131,7 @@ input[type="email"]
 	font-family: 'Open Sans', sans-serif;
 	color: #212121;
 	font-size: 14px;
-	width: 60%;
-	max-width: 260px;
+	width: 260px;
 	height: 36px;
 	margin: 0px;
 	padding: 0px 20px;
@@ -149,10 +148,9 @@ input[type="submit"]
 {
 	-webkit-appearance: none;
 	display: block;
-	float: left;
+	float: right;
 	clear: none;
-	width: 40%;
-	max-width:150px;
+	width:150px;
 	height: 36px;
 	padding: 0px;
 	margin: 0px 0px 0px 20px;
@@ -180,8 +178,8 @@ input[type="submit"]:hover
 	width: 80%;
 	max-width: 290px;
 	min-height: 80px;
-	max-height: 210px;
-	padding: 45px 0px 25px 0px;
+	max-height: 160px;
+	padding: 0px 0px 25px 0px;
 	margin: 0px auto;
 }
 
@@ -193,7 +191,7 @@ a.twitter, a.twitter:visited
 	width: 80px;
 	height: 80px;
 	background: transparent url(layout/twitter.png) no-repeat 0 0;
-	margin: 25px 25px 0px 0px;
+	margin: 0px 25px 0px 0px;
 	padding: 0px;
 }
 
@@ -210,7 +208,7 @@ a.fb, a.fb:visited
 	width: 80px;
 	height: 80px;
 	background: transparent url(layout/fb.png) no-repeat 0 0;
-	margin: 25px 25px 0px 0px;
+	margin: 0px 25px 0px 0px;
 	padding: 0px;
 }
 
@@ -227,7 +225,7 @@ a.sd, a.sd:visited
 	width: 80px;
 	height: 80px;
 	background: transparent url(layout/sd.png) no-repeat 0 0;
-	margin: 25px 0px 0px 0px;
+	margin: 0px;
 	padding: 0px;
 }
 
@@ -241,18 +239,6 @@ a.sd:hover
 	#divMain
 	{
 		min-height: 1200px;;
-	}
-	
-	input[type="email"]
-	{		
-		width: 30%;
-		max-width: 260px;
-	}
-	
-	input[type="submit"]
-	{
-		width: 30%;
-		max-width:150px;
 	}
 }
 
