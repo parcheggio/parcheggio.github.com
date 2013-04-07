@@ -131,8 +131,7 @@ input[type="email"]
 	font-family: 'Open Sans', sans-serif;
 	color: #212121;
 	font-size: 14px;
-	width: 60%;
-	max-width: 260px;
+	width: 260px;
 	height: 36px;
 	margin: 0px;
 	padding: 0px 20px;
@@ -151,8 +150,7 @@ input[type="submit"]
 	display: block;
 	float: right;
 	clear: none;
-	width: 40%;
-	max-width:150px;
+	width:150px;
 	height: 36px;
 	padding: 0px;
 	margin: 0px 0px 0px 20px;
