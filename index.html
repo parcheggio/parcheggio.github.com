@@ -1,59 +1,85 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Parchegg.io - A new and fun way of finding parking spots.</title>
-		<meta charset="utf-8">
-		<meta id="viewport" name='viewport'>
-		<script>
-		(function(doc) {
-		var viewport = document.getElementById('viewport');
-		if (screen.width<=700){
-		            doc.getElementById("viewport").setAttribute("content", "width=device-width, initial-scale=0.5, maximum-scale=1.0, user-scalable=0");
-		        } else if (screen.width>700 && screen.width<=1080) {
-		            doc.getElementById("viewport").setAttribute("content", "width=device-width, initial-scale=0.8, maximum-scale=1.0, user-scalable=0");
-		        }
-		}(document));
-		</script>
-		<meta name="keywords" content="parking, parcheggio, app, iOS, application, applicazione, trovare, car, auto, macchina, automobile, social, startup, innovative, fun">
-		<meta name="description" content="Parchegg.io - A new and fun way of finding parking spots.">
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="styles.css" type="text/css" media="all" charset="utf-8">
-		<link rel="stylesheet" href="animate.css" type="text/css" media="all" charset="utf-8">
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		<script src="animations.js"></script>
-	</head>
-	<body>
-		<div id="divMain">
-			<div id="divHead">
-				<div id="logo"></div>
-				<div id="phone"></div>
-			</div>
-			<div id="info">
-				<h1>Say hello to a new and fun way of finding parking spots!</h1>
-				<h2>Be the first to know when it is available:</h2>
-				<div id="divForm">
-					<form action="http://parchegg.us4.list-manage.com/subscribe/post?u=6aa15ae8879c4d5599f6be88b&amp;id=b5e632978a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-						<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="type your email address here" required>
-						<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-					</form>
-				</div>
-				<div id="divLinks">
-					<a class="twitter" href="https://twitter.com/parchegg_io" target="_blank" title="Twitter"></a>
-					<a class="fb" href="https://www.facebook.com/pages/Parcheggio/605442599483064" target="_blank" title="Facebook"></a>
-					<a class="sd" href="https://speakerdeck.com/maffeis/parchegg-dot-io" target="_blank" title="Watch the presentation"></a>
-				</div>
-			</div>
-		</div>
-		<script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-849639-9']);
-  _gaq.push(['_trackPageview']);
+    <head>
+        <title>Parchegg.io - A new and fun way of finding parking spots.</title>
+        <meta charset="utf-8">
+        <meta id="viewport" name='viewport'>
+        <script>
+        (function(doc) {
+        var viewport = document.getElementById('viewport');
+        if (screen.width<=700){
+                    doc.getElementById("viewport").setAttribute("content", "width=device-width, initial-scale=0.5, maximum-scale=1.0, user-scalable=0");
+                } else if (screen.width>700 && screen.width<=1080) {
+                    doc.getElementById("viewport").setAttribute("content", "width=device-width, initial-scale=0.8, maximum-scale=1.0, user-scalable=0");
+                }
+        }(document));
+        </script>
+        <meta name="keywords" content="parking, parcheggio, app, iOS, application, applicazione, trovare, car, auto, macchina, automobile, social, startup, innovative, fun">
+        <meta name="description" content="Parchegg.io - A new and fun way of finding parking spots.">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/vendor/normalize.css" type="text/css" media="all" charset="utf-8">
+        <link rel="stylesheet" href="css/styles.css" type="text/css" media="all" charset="utf-8">
+        <link rel="stylesheet" href="css/vendor/animate.css" type="text/css" media="all" charset="utf-8">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+        <script type="text/javascript">
+            $(window).load(function(){
+                $('#logo').css('display','block');
+                $('#phone').css('display','block');
+                $('.main').css('display','block');
+                $('#logo').addClass("animated flipInY");
+                $('#phone').addClass("animated bounceInRight");
+                $('.main').addClass("animated fadeInUp");
+            });
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-  		</script>
-	</body>
+            $(window).bind('scroll',function(e){
+                parallax();
+            });
+
+            function parallax()
+            {
+                var scrolled = $(window).scrollTop();
+
+                if(scrolled<320){
+                    $('#logo').css('top',(221+(scrolled*.5))+'px');
+                    $('#phone').css('top',(56+(scrolled*.9))+'px');
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="wrap">
+            <header class="header" role="contentinfo">
+                <div class="logo" id="logo"></div>
+                <div class="phone" id="phone"></div>
+            </header>
+            <div class="main" role="main">
+                <h1>Say hello to a new and fun way of finding parking spots!</h1>
+                <h2>Be the first to know when it is available:</h2>
+                <div class="subscribe-form">
+                    <form action="http://parchegg.us4.list-manage.com/subscribe/post?u=6aa15ae8879c4d5599f6be88b&amp;id=b5e632978a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="type your email address here" required>
+                        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                    </form>
+                </div>
+                <div class="social-links">
+                    <a class="twitter" href="https://twitter.com/parchegg_io" target="_blank" title="Twitter"></a>
+                    <a class="fb" href="https://www.facebook.com/pages/Parcheggio/605442599483064" target="_blank" title="Facebook"></a>
+                    <a class="sd" href="https://speakerdeck.com/maffeis/parchegg-dot-io" target="_blank" title="Watch the presentation"></a>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-849639-9']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+        
+    </body>
 </html>
