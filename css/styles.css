@@ -187,7 +187,7 @@ input[type="submit"]:hover
     display: inline-block;
     width: 2.5em;
     height: 2.5em;
-    margin: 0 0.75em 0 0;
+    margin: 0 0.375em;
     padding: 0;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -217,9 +217,6 @@ input[type="submit"]:hover
 
 /* Hide only visually, but have it available for screenreaders: h5bp.com/v */
 .visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
-
-/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
-.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
 
 @media only screen and (min-width: 500px) {
 
