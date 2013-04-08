@@ -76,6 +76,7 @@ h2
     top: 110px;
     left: 50%;
     z-index: 100;
+    display: none;
 }
 
 .phone
@@ -90,6 +91,7 @@ h2
     top: 28px;
     right: 50%;
     z-index: 100;
+    display: none;
 }
 
 
@@ -121,8 +123,7 @@ input[type="email"] {
     box-shadow: 0 0 2px 0 #888 inset;
     font-weight: 300;
     width: 100%;
-    position: relative;
-    z-index: 10;
+    padding: 0 12px;
 }
 
 input[type="submit"]
@@ -144,8 +145,6 @@ input[type="submit"]
     border-radius: 4px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
-    position: relative;
-    z-index: 9;
 }
 
 input[type="submit"]:hover
@@ -210,3 +209,13 @@ a.sd:hover
 {
     background-position: -80px 0px;
 }
+
+.logo, .phone, .main {
+    display: none;
+}
+
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
