@@ -62,42 +62,62 @@ h2
     margin: 0;
     padding: 0;
     position: relative;
+    overflow-x: hidden;
 }
 
 .logo
 {
-    width: 75px;
-    height: 81px;
+    font-size: 1rem;
+    width: 4.6875em;
+    height: 5.0625em;
     background: transparent url(../img/logo.png);
-    background-size: 75px 81px;
-    margin: 0 0 0 -132px;
+    background-size: 4.6875em 5.0625em;
+    margin: 0 0 0 -8.25em;
     padding: 0;
     position: absolute;
-    top: 110px;
+    top: 6.875em;
     left: 50%;
     z-index: 100;
-    display: none;
+    -webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-ms-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-duration:1s;-moz-animation-duration:1s;-ms-animation-duration:1s;-o-animation-duration:1s;animation-duration:1s;
+    -webkit-backface-visibility: visible !important;
+    -webkit-animation-name: flipInY;
+    -moz-backface-visibility: visible !important;
+    -moz-animation-name: flipInY;
+    -o-backface-visibility: visible !important;
+    -o-animation-name: flipInY;
+    backface-visibility: visible !important;
+    animation-name: flipInY;
 }
 
 .phone
 {
-    width: 128px;
-    height: 246px;
+    font-size: 1rem;
+    width: 8em;
+    height: 15.375em;
     background: transparent url(../img/app.png);
-    background-size: 128px 246px;
-    margin: 0 -130px 0 0;
+    background-size: 8em 15.375em;
+    margin: 0 -8.125em 0 0;
     padding: 0;
     position: absolute;
-    top: 28px;
+    top: 1.75em;
     right: 50%;
     z-index: 100;
-    display: none;
+    -webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-ms-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-duration:1s;-moz-animation-duration:1s;-ms-animation-duration:1s;-o-animation-duration:1s;animation-duration:1s;
+    -webkit-animation-name: bounceInRight;
+    -moz-animation-name: bounceInRight;
+    -o-animation-name: bounceInRight;
+    animation-name: bounceInRight;
 }
 
 
 .main
 {
     padding: 0.75rem;
+    -webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-ms-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-duration:1s;-moz-animation-duration:1s;-ms-animation-duration:1s;-o-animation-duration:1s;animation-duration:1s;
+    -webkit-animation-name: fadeInUp;
+    -moz-animation-name: fadeInUp;
+    -o-animation-name: fadeInUp;
+    animation-name: fadeInUp;
 }
 
 .subscribe-form
@@ -210,9 +230,9 @@ a.sd:hover
     background-position: -80px 0px;
 }
 
-.logo, .phone, .main {
+/*.logo, .phone, .main {
     display: none;
-}
+}*/
 
 /* Hide only visually, but have it available for screenreaders: h5bp.com/v */
 .visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
@@ -228,6 +248,11 @@ a.sd:hover
 
     h2 {
         font-size: 1.3125rem;
+    }
+
+    .logo, .phone
+    {
+        font-size: 1.5rem;
     }
     
     .header {
@@ -270,6 +295,16 @@ a.sd:hover
 
     h2 {
         font-size: 1.75rem;
+    }
+
+    .logo, .phone
+    {
+        font-size: 2rem;
+    }
+
+    .phone
+    {
+
     }
     
     .header {
