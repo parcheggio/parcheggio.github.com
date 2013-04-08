@@ -176,67 +176,44 @@ input[type="submit"]:hover
     background-color: #555;
 }
 
-.social-links
-{
-    height: 80px;
-    padding: 0 0 25px 0;
+.social-links {
+    padding: 1.5em 0 0 0;
     margin: 0 auto;
+    text-align: center;
 }
 
-a.twitter, a.twitter:visited
-{
-    display: block;
-    float: left;
-    clear: none;
-    width: 40px;
-    height: 40px;
-    background: transparent url(../img/twitter.png) no-repeat 0 0;
-    margin: 0 12px 0 0;
+.social-item, .social-item:visited {
+    font-size: 1rem;
+    display: inline-block;
+    width: 2.5em;
+    height: 2.5em;
+    margin: 0 0.75em 0 0;
     padding: 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
-a.twitter:hover
+.social-item:hover
 {
-    background-position: -80px 0;
+    background-position: -40px 0;
 }
 
-a.fb, a.fb:visited
+.twitter, .twitter:visited
 {
-    display: block;
-    float: left;
-    clear: none;
-    width: 80px;
-    height: 80px;
+    background: transparent url(../img/twitter.png) no-repeat 0 0;
+}
+
+.fb, .fb:visited
+{
     background: transparent url(../img/fb.png) no-repeat 0 0;
-    margin: 0px 25px 0px 0px;
-    padding: 0px;
 }
 
-a.fb:hover
+.sd, .sd:visited
 {
-    background-position: -80px 0px;
-}
-
-a.sd, a.sd:visited
-{
-    display: block;
-    float: left;
-    clear: none;
-    width: 80px;
-    height: 80px;
     background: transparent url(../img/sd.png) no-repeat 0 0;
-    margin: 0px;
-    padding: 0px;
 }
-
-a.sd:hover
-{
-    background-position: -80px 0px;
-}
-
-/*  .logo, .phone, .main {
-    display: none;
-}*/
 
 /* Hide only visually, but have it available for screenreaders: h5bp.com/v */
 .visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
@@ -290,6 +267,11 @@ a.sd:hover
         vertical-align: top;
         width: 25%;
     }
+
+    .social-links {
+    
+        font-size: 1.5em;
+    }
 }
 
 @media only screen and (min-width: 1080px) {
@@ -326,5 +308,8 @@ a.sd:hover
         padding: 2.25rem 0 0 0;
     }
 
+    .social-links {
     
+        font-size: 2em;
+    }
 }
