@@ -21,7 +21,7 @@
             });
         </script>
     </head>
-    <body>
+    <body id="page">
         <div class="wrap">
             <header class="header" role="contentinfo">
                 <h1 class="visuallyhidden">Parchegg.io</h1>
@@ -44,6 +44,29 @@
                 </div>
             </div>
         </div>
+        <script type="text/javascript">
+            window.onload = function(){
+                document.getElementById('page').setAttribute('class', 'animable');
+
+                window.onscroll = function(){
+
+                    if(window.innerWidth >= 500){
+                        var scroll = window.scrollY;
+                        if(scroll < 320) {
+                            document.getElementById('logo').style.top = (221+(scroll*.5))+'px';
+                            document.getElementById('phone').style.top = (56+(scroll*.9))+'px';
+                        }
+                    }
+                };
+
+                window.onresize = function(){
+                    if(window.innerWidth < 500){
+                        document.getElementById('logo').style.top = '6.875em';
+                        document.getElementById('phone').style.top = '1.75em';
+                    }
+                }
+            };
+        </script>
         <script type="text/javascript">
             var _gaq = _gaq || [];
             _gaq.push(['_setAccount', 'UA-849639-9']);
