@@ -49,23 +49,40 @@
                 document.getElementById('page').setAttribute('class', 'animable');
 
                 window.onscroll = function(){
-
-                    if(window.innerWidth >= 500){
-                        var scroll = window.scrollY;
-                        if(scroll < 320) {
-                            document.getElementById('logo').style.top = (221+(scroll*.5))+'px';
-                            document.getElementById('phone').style.top = (56+(scroll*.9))+'px';
-                        }
-                    }
+                    adjustScroll();
                 };
 
                 window.onresize = function(){
-                    if(window.innerWidth < 500){
-                        document.getElementById('logo').style.top = '6.875em';
-                        document.getElementById('phone').style.top = '1.75em';
-                    }
+                    adjustScroll();
                 }
             };
+
+            function adjustScroll(){
+                if(window.innerWidth < 500){
+                    document.getElementById('logo').style.top = '6.875em';
+                    document.getElementById('phone').style.top = '1.75em';
+                }
+                else{
+                    var scroll = window.scrollY;
+                    if(scroll < 320) {
+                        var fs = parseInt(getStyle('logo','font-size'));
+                        var ratio = fs/16;
+                        document.getElementById('logo').style.top = ((110*ratio/fs)+((scroll*0.5)/fs))+'em';
+                        document.getElementById('phone').style.top = ((28*ratio/fs)+((scroll*0.9)/fs))+'em';
+                    }
+                }
+            }
+
+            function getStyle(el,styleProp){
+                var x = document.getElementById(el);
+                if (x.currentStyle){
+                    var y = x.currentStyle[styleProp];
+                }
+                else if (window.getComputedStyle){
+                    var y = document.defaultView.getComputedStyle(x,null).getPropertyValue(styleProp);
+                }
+                return y;
+            }
         </script>
         <script type="text/javascript">
             var _gaq = _gaq || [];
